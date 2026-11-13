@@ -1,0 +1,501 @@
+CustomerKey,CustomerName,CustomerSegment,Country
+1,Rahul Johnson,Consumer,United Kingdom
+2,Patricia Brown,Consumer,United States
+3,Rahul Taylor,Consumer,India
+4,James Smith,Consumer,Germany
+5,Amit Anderson,Consumer,Germany
+6,Ananya Taylor,Consumer,India
+7,Priya Jones,Corporate,United States
+8,Robert Das,Consumer,Germany
+9,Patricia Mukherjee,Consumer,India
+10,Mary Mukherjee,Corporate,Japan
+11,John Smith,Corporate,Japan
+12,Mary Das,Consumer,United Kingdom
+13,Rahul Anderson,Small Business,United Kingdom
+14,Priya Brown,Corporate,United States
+15,Rahul Brown,Corporate,United States
+16,Patricia Johnson,Consumer,India
+17,Rahul Mukherjee,Consumer,United Kingdom
+18,Patricia Jones,Corporate,United States
+19,Priya Williams,Consumer,Germany
+20,Robert Banerjee,Consumer,Japan
+21,Patricia Mukherjee,Corporate,United States
+22,Patricia Smith,Corporate,India
+23,John Johnson,Consumer,Japan
+24,Ananya Mukherjee,Consumer,India
+25,Michael Banerjee,Consumer,Germany
+26,Patricia Taylor,Consumer,Japan
+27,Michael Anderson,Consumer,Germany
+28,Robert Taylor,Consumer,United States
+29,Mary Williams,Corporate,India
+30,Priya Johnson,Consumer,Japan
+31,Linda Taylor,Consumer,Japan
+32,James Johnson,Corporate,Japan
+33,John Mukherjee,Consumer,India
+34,Robert Banerjee,Consumer,United Kingdom
+35,Amit Williams,Consumer,United States
+36,Rahul Jones,Corporate,Japan
+37,Priya Brown,Consumer,Germany
+38,Amit Taylor,Small Business,Japan
+39,Jennifer Banerjee,Consumer,United Kingdom
+40,John Brown,Consumer,Japan
+41,Mary Johnson,Corporate,United States
+42,Amit Williams,Consumer,India
+43,Amit Williams,Consumer,Japan
+44,Michael Brown,Small Business,Germany
+45,Ananya Jones,Consumer,United Kingdom
+46,Linda Taylor,Consumer,Germany
+47,Patricia Johnson,Consumer,Japan
+48,Amit Brown,Corporate,United States
+49,Mary Smith,Consumer,United States
+50,Jennifer Johnson,Consumer,United Kingdom
+51,Rahul Banerjee,Consumer,Germany
+52,Ananya Anderson,Corporate,Germany
+53,Linda Das,Consumer,United States
+54,Rahul Das,Consumer,India
+55,Linda Smith,Corporate,United States
+56,James Das,Corporate,United States
+57,Patricia Brown,Consumer,India
+58,Robert Das,Consumer,India
+59,Patricia Johnson,Consumer,Japan
+60,Mary Smith,Corporate,Japan
+61,James Johnson,Small Business,Germany
+62,Robert Das,Consumer,Germany
+63,Michael Smith,Consumer,United States
+64,Michael Jones,Small Business,India
+65,John Das,Corporate,Japan
+66,Rahul Banerjee,Consumer,United Kingdom
+67,Patricia Smith,Corporate,Japan
+68,James Mukherjee,Consumer,Japan
+69,Linda Taylor,Small Business,Japan
+70,Robert Smith,Small Business,United States
+71,Robert Johnson,Corporate,Germany
+72,Michael Johnson,Small Business,Japan
+73,Patricia Anderson,Corporate,Japan
+74,Mary Das,Corporate,Japan
+75,Amit Mukherjee,Small Business,Germany
+76,Rahul Mukherjee,Consumer,India
+77,Robert Jones,Consumer,United States
+78,James Banerjee,Corporate,Japan
+79,Mary Johnson,Consumer,Japan
+80,John Williams,Small Business,United States
+81,Patricia Mukherjee,Consumer,India
+82,Amit Jones,Corporate,Japan
+83,James Taylor,Consumer,United States
+84,Robert Jones,Consumer,United States
+85,Ananya Taylor,Consumer,United Kingdom
+86,Priya Brown,Corporate,Germany
+87,Rahul Jones,Consumer,United Kingdom
+88,James Johnson,Corporate,United Kingdom
+89,James Smith,Consumer,Germany
+90,Rahul Jones,Consumer,India
+91,Amit Das,Corporate,United States
+92,Mary Williams,Consumer,United Kingdom
+93,Priya Taylor,Consumer,Germany
+94,James Jones,Consumer,United States
+95,Jennifer Brown,Corporate,United States
+96,Jennifer Taylor,Small Business,India
+97,Priya Williams,Small Business,Germany
+98,Robert Williams,Small Business,United States
+99,Robert Mukherjee,Corporate,India
+100,Rahul Brown,Consumer,United States
+101,Michael Smith,Small Business,Germany
+102,Patricia Banerjee,Consumer,Germany
+103,Patricia Smith,Corporate,India
+104,Jennifer Jones,Small Business,United Kingdom
+105,Jennifer Taylor,Consumer,Japan
+106,Jennifer Smith,Consumer,United Kingdom
+107,Robert Anderson,Small Business,United Kingdom
+108,James Johnson,Corporate,United Kingdom
+109,Ananya Mukherjee,Consumer,Japan
+110,Mary Das,Small Business,Germany
+111,John Smith,Corporate,United States
+112,Amit Taylor,Corporate,Germany
+113,Jennifer Das,Consumer,United Kingdom
+114,Priya Mukherjee,Corporate,United States
+115,Ananya Jones,Consumer,India
+116,Jennifer Das,Corporate,Japan
+117,Robert Brown,Consumer,India
+118,Rahul Williams,Corporate,United Kingdom
+119,Michael Taylor,Corporate,United Kingdom
+120,John Brown,Consumer,Japan
+121,Priya Mukherjee,Consumer,India
+122,Rahul Brown,Consumer,Germany
+123,Rahul Johnson,Consumer,Japan
+124,Jennifer Johnson,Corporate,Germany
+125,Rahul Jones,Consumer,Germany
+126,Robert Smith,Consumer,India
+127,Priya Johnson,Consumer,Japan
+128,Patricia Das,Consumer,Germany
+129,Robert Smith,Small Business,United States
+130,Michael Brown,Consumer,Japan
+131,Linda Smith,Corporate,United States
+132,Linda Williams,Corporate,Japan
+133,Amit Anderson,Consumer,India
+134,Priya Taylor,Consumer,Japan
+135,Linda Williams,Corporate,India
+136,Linda Jones,Corporate,United Kingdom
+137,Amit Banerjee,Corporate,United Kingdom
+138,Linda Johnson,Corporate,Germany
+139,John Mukherjee,Consumer,Japan
+140,Mary Williams,Consumer,India
+141,Ananya Williams,Corporate,United States
+142,Michael Das,Consumer,India
+143,Michael Smith,Consumer,India
+144,Michael Anderson,Small Business,United States
+145,Priya Das,Consumer,United Kingdom
+146,John Das,Small Business,India
+147,Amit Taylor,Corporate,Germany
+148,Linda Brown,Consumer,India
+149,James Das,Consumer,India
+150,Ananya Williams,Corporate,Germany
+151,Priya Taylor,Consumer,India
+152,Priya Anderson,Corporate,United States
+153,Rahul Das,Consumer,India
+154,Robert Smith,Consumer,United Kingdom
+155,Patricia Banerjee,Consumer,India
+156,John Das,Consumer,United States
+157,Linda Smith,Corporate,United States
+158,Jennifer Brown,Corporate,United States
+159,James Brown,Consumer,United States
+160,Priya Williams,Consumer,India
+161,Rahul Johnson,Corporate,Germany
+162,Linda Jones,Corporate,Germany
+163,Priya Anderson,Small Business,United States
+164,Robert Jones,Consumer,United States
+165,John Anderson,Corporate,India
+166,Michael Brown,Consumer,Germany
+167,Mary Jones,Small Business,Japan
+168,Mary Anderson,Corporate,United Kingdom
+169,Amit Das,Corporate,United States
+170,Amit Mukherjee,Consumer,India
+171,Linda Johnson,Consumer,United Kingdom
+172,Rahul Banerjee,Corporate,India
+173,Robert Taylor,Small Business,United Kingdom
+174,Priya Taylor,Corporate,India
+175,Michael Anderson,Consumer,Germany
+176,Mary Jones,Small Business,Germany
+177,Linda Anderson,Corporate,India
+178,Jennifer Smith,Consumer,United Kingdom
+179,Robert Banerjee,Consumer,United Kingdom
+180,Jennifer Jones,Small Business,United Kingdom
+181,Amit Smith,Consumer,Germany
+182,Mary Brown,Corporate,India
+183,Amit Brown,Corporate,India
+184,Linda Smith,Consumer,Germany
+185,Michael Brown,Consumer,Japan
+186,Jennifer Banerjee,Corporate,United Kingdom
+187,Michael Taylor,Consumer,India
+188,John Jones,Consumer,United States
+189,Ananya Brown,Consumer,Japan
+190,Ananya Williams,Consumer,India
+191,John Anderson,Small Business,Japan
+192,Priya Jones,Small Business,Germany
+193,John Brown,Consumer,United Kingdom
+194,James Taylor,Consumer,United States
+195,James Taylor,Consumer,Germany
+196,Rahul Banerjee,Consumer,United States
+197,Priya Jones,Consumer,India
+198,Jennifer Williams,Small Business,United Kingdom
+199,Linda Johnson,Corporate,India
+200,Linda Johnson,Corporate,United States
+201,Robert Williams,Corporate,United Kingdom
+202,Mary Brown,Consumer,India
+203,Priya Anderson,Corporate,Germany
+204,Amit Das,Consumer,India
+205,John Anderson,Small Business,United Kingdom
+206,Priya Anderson,Consumer,United States
+207,Patricia Brown,Consumer,United States
+208,Robert Brown,Consumer,United States
+209,Robert Smith,Consumer,Japan
+210,Linda Jones,Consumer,United Kingdom
+211,Ananya Jones,Corporate,India
+212,Mary Brown,Small Business,Japan
+213,Rahul Brown,Consumer,Japan
+214,Patricia Williams,Small Business,Germany
+215,Mary Smith,Consumer,United Kingdom
+216,Priya Anderson,Small Business,India
+217,Mary Banerjee,Corporate,India
+218,John Taylor,Consumer,India
+219,Mary Anderson,Consumer,India
+220,Ananya Mukherjee,Corporate,United States
+221,Mary Brown,Small Business,Japan
+222,Priya Smith,Small Business,United Kingdom
+223,Priya Smith,Corporate,Germany
+224,Linda Taylor,Corporate,United Kingdom
+225,Robert Anderson,Consumer,India
+226,Mary Banerjee,Consumer,United Kingdom
+227,Jennifer Johnson,Small Business,United Kingdom
+228,Michael Banerjee,Consumer,India
+229,Amit Smith,Consumer,United Kingdom
+230,John Mukherjee,Consumer,India
+231,Amit Smith,Corporate,Japan
+232,Linda Das,Consumer,Japan
+233,Jennifer Anderson,Corporate,India
+234,James Brown,Consumer,Germany
+235,John Banerjee,Small Business,India
+236,Mary Smith,Small Business,Japan
+237,Patricia Williams,Consumer,United States
+238,Amit Das,Consumer,United States
+239,Linda Johnson,Corporate,Germany
+240,Linda Jones,Consumer,United Kingdom
+241,Michael Banerjee,Small Business,Germany
+242,Linda Taylor,Consumer,Germany
+243,Priya Taylor,Corporate,Germany
+244,Mary Jones,Corporate,India
+245,Jennifer Taylor,Consumer,United States
+246,John Jones,Corporate,Japan
+247,Rahul Banerjee,Small Business,India
+248,Amit Banerjee,Consumer,Japan
+249,Amit Das,Consumer,United Kingdom
+250,Patricia Brown,Corporate,Germany
+251,Michael Smith,Consumer,India
+252,Ananya Das,Consumer,Germany
+253,Linda Smith,Consumer,Japan
+254,Jennifer Johnson,Small Business,India
+255,Mary Taylor,Small Business,United States
+256,Ananya Williams,Consumer,Germany
+257,Mary Banerjee,Corporate,United Kingdom
+258,Jennifer Anderson,Corporate,United States
+259,Jennifer Taylor,Consumer,United Kingdom
+260,Rahul Banerjee,Small Business,United States
+261,Priya Johnson,Consumer,United Kingdom
+262,Patricia Johnson,Consumer,United States
+263,Rahul Johnson,Consumer,United Kingdom
+264,James Smith,Consumer,United States
+265,John Mukherjee,Consumer,Germany
+266,Patricia Taylor,Consumer,Germany
+267,Robert Williams,Consumer,India
+268,Priya Brown,Consumer,Japan
+269,Robert Brown,Consumer,United Kingdom
+270,Linda Jones,Corporate,India
+271,John Taylor,Consumer,India
+272,Jennifer Anderson,Consumer,India
+273,Ananya Jones,Consumer,United Kingdom
+274,Patricia Das,Small Business,United States
+275,Patricia Das,Corporate,Japan
+276,John Jones,Consumer,India
+277,John Smith,Corporate,United States
+278,Priya Banerjee,Corporate,United Kingdom
+279,Patricia Anderson,Corporate,Germany
+280,Rahul Brown,Corporate,Germany
+281,Rahul Johnson,Small Business,United States
+282,John Banerjee,Consumer,United Kingdom
+283,Ananya Williams,Consumer,United Kingdom
+284,Jennifer Das,Consumer,Germany
+285,Amit Mukherjee,Consumer,United Kingdom
+286,Robert Jones,Small Business,India
+287,John Mukherjee,Corporate,India
+288,Mary Williams,Corporate,Germany
+289,Rahul Das,Small Business,Japan
+290,Jennifer Johnson,Corporate,United States
+291,John Taylor,Consumer,United Kingdom
+292,Rahul Jones,Corporate,United Kingdom
+293,Mary Brown,Consumer,Japan
+294,Amit Mukherjee,Small Business,Germany
+295,Rahul Johnson,Corporate,India
+296,Ananya Jones,Corporate,United States
+297,Robert Smith,Small Business,United Kingdom
+298,Linda Johnson,Consumer,Japan
+299,Robert Das,Consumer,Japan
+300,Michael Anderson,Corporate,Germany
+301,Michael Johnson,Corporate,Japan
+302,Michael Jones,Consumer,United Kingdom
+303,Patricia Banerjee,Consumer,Germany
+304,Jennifer Johnson,Small Business,United Kingdom
+305,Amit Mukherjee,Consumer,United Kingdom
+306,Patricia Johnson,Small Business,India
+307,Mary Brown,Corporate,Japan
+308,James Smith,Corporate,Germany
+309,Robert Anderson,Consumer,Japan
+310,Patricia Anderson,Consumer,Germany
+311,Jennifer Williams,Corporate,Japan
+312,James Jones,Small Business,Germany
+313,Robert Taylor,Consumer,Germany
+314,Mary Smith,Consumer,United Kingdom
+315,Patricia Anderson,Consumer,Germany
+316,John Smith,Consumer,India
+317,Amit Johnson,Corporate,India
+318,Linda Mukherjee,Consumer,United States
+319,Linda Taylor,Consumer,Japan
+320,James Taylor,Consumer,United States
+321,James Banerjee,Corporate,India
+322,Rahul Johnson,Consumer,India
+323,Mary Johnson,Consumer,Germany
+324,Mary Williams,Consumer,Japan
+325,Amit Mukherjee,Consumer,Japan
+326,Amit Jones,Consumer,Japan
+327,Michael Johnson,Corporate,United States
+328,Rahul Taylor,Corporate,Germany
+329,Michael Banerjee,Small Business,India
+330,Jennifer Banerjee,Consumer,United States
+331,Jennifer Das,Consumer,United Kingdom
+332,Jennifer Williams,Corporate,India
+333,Mary Johnson,Corporate,United States
+334,Michael Johnson,Corporate,United Kingdom
+335,Robert Taylor,Consumer,Japan
+336,Amit Mukherjee,Corporate,India
+337,Jennifer Das,Small Business,United States
+338,John Anderson,Consumer,United States
+339,Priya Taylor,Consumer,India
+340,Patricia Johnson,Consumer,Japan
+341,Jennifer Johnson,Corporate,Japan
+342,Patricia Das,Corporate,Japan
+343,Priya Taylor,Consumer,United Kingdom
+344,James Williams,Consumer,United Kingdom
+345,Jennifer Mukherjee,Consumer,Germany
+346,Priya Das,Consumer,United States
+347,Mary Taylor,Consumer,India
+348,Linda Mukherjee,Consumer,United Kingdom
+349,Ananya Mukherjee,Corporate,Japan
+350,Priya Johnson,Small Business,Germany
+351,Robert Anderson,Consumer,United States
+352,John Banerjee,Corporate,India
+353,Priya Banerjee,Consumer,Germany
+354,Amit Johnson,Consumer,United States
+355,John Anderson,Consumer,United Kingdom
+356,James Brown,Consumer,Japan
+357,James Smith,Consumer,Germany
+358,Robert Jones,Consumer,United States
+359,James Banerjee,Corporate,Germany
+360,Robert Das,Consumer,Germany
+361,Amit Taylor,Corporate,United Kingdom
+362,Mary Das,Small Business,United States
+363,Michael Smith,Consumer,United States
+364,Jennifer Anderson,Consumer,India
+365,Ananya Das,Consumer,India
+366,James Mukherjee,Consumer,Japan
+367,Linda Mukherjee,Consumer,United States
+368,Patricia Das,Corporate,Japan
+369,Mary Das,Small Business,United Kingdom
+370,Patricia Mukherjee,Corporate,United States
+371,Amit Johnson,Consumer,Germany
+372,Jennifer Mukherjee,Corporate,Germany
+373,Patricia Johnson,Consumer,Germany
+374,Robert Anderson,Consumer,United States
+375,Robert Banerjee,Consumer,Japan
+376,Priya Banerjee,Corporate,Japan
+377,Rahul Anderson,Consumer,United Kingdom
+378,Robert Banerjee,Consumer,India
+379,Rahul Jones,Corporate,Japan
+380,James Mukherjee,Consumer,United Kingdom
+381,Linda Banerjee,Consumer,United Kingdom
+382,John Johnson,Corporate,United States
+383,Priya Anderson,Consumer,India
+384,Priya Taylor,Small Business,United States
+385,Linda Anderson,Corporate,United Kingdom
+386,Priya Banerjee,Consumer,United States
+387,Linda Johnson,Corporate,United Kingdom
+388,Ananya Johnson,Consumer,Germany
+389,James Brown,Corporate,India
+390,Amit Taylor,Corporate,United Kingdom
+391,Jennifer Jones,Consumer,United Kingdom
+392,Rahul Anderson,Consumer,United Kingdom
+393,Mary Mukherjee,Consumer,India
+394,John Jones,Corporate,Japan
+395,Robert Mukherjee,Consumer,Germany
+396,Jennifer Jones,Small Business,India
+397,Robert Anderson,Corporate,United States
+398,John Taylor,Consumer,United Kingdom
+399,Robert Taylor,Consumer,India
+400,Amit Mukherjee,Consumer,United Kingdom
+401,Robert Brown,Consumer,India
+402,Patricia Brown,Small Business,Germany
+403,Mary Jones,Corporate,United States
+404,Amit Taylor,Corporate,Japan
+405,James Mukherjee,Small Business,Japan
+406,Robert Anderson,Consumer,Germany
+407,Robert Anderson,Corporate,Germany
+408,Ananya Banerjee,Consumer,United Kingdom
+409,Rahul Brown,Small Business,Japan
+410,John Banerjee,Consumer,Germany
+411,John Banerjee,Small Business,Germany
+412,Jennifer Anderson,Small Business,India
+413,John Das,Consumer,India
+414,Robert Brown,Corporate,Germany
+415,John Smith,Corporate,United Kingdom
+416,Amit Johnson,Corporate,Japan
+417,Mary Jones,Consumer,Germany
+418,John Banerjee,Small Business,Germany
+419,Michael Johnson,Small Business,Germany
+420,Linda Mukherjee,Small Business,India
+421,James Das,Consumer,Germany
+422,Michael Johnson,Consumer,United States
+423,Jennifer Johnson,Corporate,United Kingdom
+424,Robert Williams,Consumer,India
+425,Ananya Williams,Corporate,India
+426,Linda Anderson,Consumer,United States
+427,James Jones,Consumer,Germany
+428,Amit Anderson,Consumer,United States
+429,John Brown,Consumer,United States
+430,Patricia Das,Corporate,Japan
+431,Linda Johnson,Consumer,India
+432,Priya Taylor,Consumer,Japan
+433,Priya Brown,Corporate,United Kingdom
+434,Michael Smith,Corporate,Germany
+435,Priya Das,Consumer,United States
+436,Amit Mukherjee,Consumer,Japan
+437,Amit Taylor,Corporate,Japan
+438,Amit Smith,Consumer,India
+439,James Das,Small Business,United Kingdom
+440,Ananya Smith,Consumer,United States
+441,Jennifer Brown,Corporate,United States
+442,Priya Mukherjee,Consumer,United Kingdom
+443,Amit Mukherjee,Corporate,Germany
+444,Rahul Banerjee,Small Business,India
+445,Rahul Williams,Corporate,United States
+446,Ananya Banerjee,Consumer,Germany
+447,James Brown,Small Business,United Kingdom
+448,John Taylor,Consumer,Japan
+449,Linda Jones,Consumer,Germany
+450,John Mukherjee,Small Business,United States
+451,Rahul Mukherjee,Consumer,United Kingdom
+452,Michael Das,Corporate,India
+453,Jennifer Williams,Consumer,India
+454,Jennifer Taylor,Consumer,United States
+455,Ananya Das,Consumer,Japan
+456,Robert Taylor,Consumer,United States
+457,Mary Mukherjee,Corporate,United Kingdom
+458,Linda Anderson,Corporate,Germany
+459,Ananya Banerjee,Consumer,United States
+460,Ananya Mukherjee,Corporate,India
+461,John Smith,Consumer,India
+462,Jennifer Taylor,Corporate,Germany
+463,James Williams,Corporate,India
+464,James Williams,Consumer,United Kingdom
+465,Jennifer Das,Small Business,United States
+466,Priya Williams,Corporate,United Kingdom
+467,Jennifer Banerjee,Corporate,Japan
+468,Robert Taylor,Consumer,United Kingdom
+469,Rahul Jones,Consumer,United States
+470,James Williams,Consumer,India
+471,Amit Johnson,Consumer,United Kingdom
+472,Ananya Banerjee,Consumer,Japan
+473,John Banerjee,Consumer,Germany
+474,Mary Banerjee,Consumer,India
+475,Mary Mukherjee,Corporate,United States
+476,Amit Taylor,Consumer,United Kingdom
+477,Robert Williams,Corporate,Japan
+478,Patricia Johnson,Small Business,Germany
+479,Patricia Banerjee,Consumer,Japan
+480,Priya Mukherjee,Consumer,Japan
+481,Robert Anderson,Small Business,United States
+482,John Das,Small Business,India
+483,Amit Das,Corporate,Japan
+484,Mary Williams,Small Business,United States
+485,Linda Banerjee,Corporate,United Kingdom
+486,Robert Taylor,Corporate,Germany
+487,Robert Das,Consumer,United States
+488,Mary Taylor,Consumer,Germany
+489,Robert Mukherjee,Small Business,Germany
+490,Jennifer Taylor,Small Business,United States
+491,John Brown,Corporate,Japan
+492,John Williams,Corporate,Japan
+493,Amit Johnson,Consumer,Germany
+494,Priya Anderson,Consumer,Japan
+495,Ananya Anderson,Consumer,Japan
+496,James Smith,Consumer,Japan
+497,John Brown,Corporate,India
+498,Priya Smith,Consumer,Japan
+499,John Jones,Consumer,India
+500,John Banerjee,Consumer,United States

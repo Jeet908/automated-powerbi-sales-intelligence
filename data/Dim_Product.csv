@@ -1,0 +1,12 @@
+ProductKey,ProductName,Category,SubCategory,StandardCost,UnitPrice,TargetMarginPct
+101,"Smart Monitor 27""",Technology,Displays,280.0,420.0,0.33
+102,Mechanical Keyboard,Technology,Peripherals,45.0,89.0,0.49
+103,Noise-Cancelling Headphones,Technology,Audio,110.0,199.0,0.45
+104,USB-C Thunderbolt Hub,Technology,Accessories,35.0,75.0,0.53
+105,Ergonomic Task Chair,Office Supplies,Furniture,140.0,260.0,0.46
+106,Height-Adjustable Desk,Office Supplies,Furniture,220.0,450.0,0.51
+107,Laser Toner Cartridge,Office Supplies,Supplies,25.0,65.0,0.62
+108,Premium Archival Binders (Pack of 10),Office Supplies,Paper Products,12.0,28.0,0.57
+109,Fitness Smartwatch V2,Consumer Electronics,Wearables,65.0,149.0,0.56
+110,Fast Wireless Charging Pad,Consumer Electronics,Accessories,14.0,32.0,0.56
+111,Smart LED Desk Lamp,Consumer Electronics,Smart Home,22.0,52.0,0.58

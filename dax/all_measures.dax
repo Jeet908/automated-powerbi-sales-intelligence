@@ -1,0 +1,45 @@
+-- =====================================================================
+-- COMPLETE DAX MEASURES MASTER LIST
+-- Table: _KeyMeasures
+-- =====================================================================
+
+-- 1. Total Revenue
+Total Revenue = SUM(Fact_Sales[Revenue])
+
+-- 2. Total Cost
+Total Cost = SUM(Fact_Sales[TotalCost])
+
+-- 3. Total Profit
+Total Profit = [Total Revenue] - [Total Cost]
+
+-- 4. Profit Margin %
+Profit Margin % = DIVIDE([Total Profit], [Total Revenue], 0)
+
+-- 5. Total Orders
+Total Orders = DISTINCTCOUNT(Fact_Sales[SalesKey])
+
+-- 6. Average Order Value (AOV)
+Average Order Value (AOV) = DIVIDE([Total Revenue], [Total Orders], 0)
+
+-- 7. Prior Year Revenue (LY)
+Revenue LY = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(Dim_Date[FullDate]))
+
+-- 8. YoY Revenue Growth $
+YoY Revenue Growth $ = [Total Revenue] - [Revenue LY]
+
+-- 9. YoY Revenue Growth %
+YoY Revenue Growth % = DIVIDE([YoY Revenue Growth $], [Revenue LY], 0)
+
+-- 10. Revenue YTD
+Revenue YTD = TOTALYTD([Total Revenue], Dim_Date[FullDate])
+
+-- 11. Dynamic Performance Status Badge
+YoY Performance Status = 
+VAR Growth = [YoY Revenue Growth %]
+RETURN
+    SWITCH(
+        TRUE(),
+        Growth >= 0.10, "🟢 Outperforming (≥ +10%)",
+        Growth >= 0.00, "🟡 On Target (0% to +10%)",
+        "🔴 Underperforming (< 0%)"
+    )
