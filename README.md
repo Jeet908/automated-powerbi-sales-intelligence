@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # 📊 Enterprise Sales & Executive Profitability Intelligence System (Power BI)
 
 [![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-yellow?logo=powerbi)](https://powerbi.microsoft.com/)
 [![DAX](https://img.shields.io/badge/DAX-Time%20Intelligence-blue)](#)
 [![Star Schema](https://img.shields.io/badge/Data%20Modeling-Star%20Schema-green)](#)
 
-An enterprise-scale Power BI business intelligence system modeling 25,000+ multi-regional retail transactions to monitor net revenue, profit margins, and Year-over-Year (YoY) velocity without manual reporting overhead.
+An automated Power BI system for tracking sales, revenue, profit margins, and year-over-year performance across 25,000+ multi-regional retail transactions, reducing reliance on manual spreadsheet reporting.
 
 ---
 
@@ -75,7 +74,3 @@ erDiagram
 **Sourojit Kar**  
 - [GitHub Profile](https://github.com/Jeet908)
 - [LinkedIn Profile](https://linkedin.com/in/sourojitkar)
-=======
-# automated-powerbi-sales-intelligence
-Automate multi-channel sales and margin performance tracking, eliminate manual spreadsheet updates, and provide C-suite executives with real-time visibility into revenue, profit leakages, and regional growth metrics.
->>>>>>> origin/main
