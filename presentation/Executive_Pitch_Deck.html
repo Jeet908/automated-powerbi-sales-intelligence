@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executive Pitch Deck - Enterprise Sales & Profitability Intelligence</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+  :root {
+    --bg-dark: #0F172A;
+    --card-bg: #1E293B;
+    --card-border: #334155;
+    --accent-blue: #3B82F6;
+    --accent-emerald: #10B981;
+    --accent-amber: #F59E0B;
+    --accent-crimson: #EF4444;
+    --text-white: #F8FAFC;
+    --text-gray: #94A3B8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #020617;
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 35px;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 960px;
+    min-height: 540px;
+    background: var(--bg-dark);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #2563EB, #10B981, #38BDF8);
+  }
+
+  .slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+  }
+
+  .slide-title-wrap h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-white);
+    letter-spacing: -0.5px;
+  }
+
+  .slide-title-wrap p {
+    font-size: 13px;
+    color: var(--accent-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 3px;
+  }
+
+  .slide-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    background: var(--card-bg);
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--card-border);
+    color: var(--text-gray);
+  }
+
+  .slide-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slide-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--card-border);
+    padding-top: 12px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--text-gray);
+  }
+
+  /* Grid Layouts */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+
+  /* Cards */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .kpi-card {
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .kpi-val {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--accent-blue);
+    margin-bottom: 5px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .kpi-val.green { color: var(--accent-emerald); }
+  .kpi-val.amber { color: var(--accent-amber); }
+  .kpi-val.red { color: var(--accent-crimson); }
+
+  .kpi-label {
+    font-size: 12px;
+    color: var(--text-gray);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  /* Badges & Lists */
+  .badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .badge.red { background: rgba(239, 68, 68, 0.2); color: #FCA5A5; border: 1px solid rgba(239, 68, 68, 0.4); }
+  .badge.green { background: rgba(16, 185, 129, 0.2); color: #6EE7B7; border: 1px solid rgba(16, 185, 129, 0.4); }
+  .badge.blue { background: rgba(59, 130, 246, 0.2); color: #93C5FD; border: 1px solid rgba(59, 130, 246, 0.4); }
+
+  ul.clean-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  ul.clean-list li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #CBD5E1;
+    position: relative;
+    padding-left: 20px;
+  }
+  ul.clean-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-size: 16px;
+  }
+
+  /* Print Styles */
+  @media print {
+    body { background: transparent; padding: 0; }
+    .slide {
+      box-shadow: none;
+      border: 1px solid #ddd;
+      margin: 0;
+      page-break-after: always;
+      width: 100%;
+      height: 100vh;
+      border-radius: 0;
+    }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print" style="width: 100%; max-width: 960px; background: #1E293B; border: 1px solid #3B82F6; padding: 12px 20px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+    <strong>📄 Executive Presentation Ready:</strong> Open in Chrome/Edge & press <kbd style="background: #0F172A; padding: 3px 6px; border-radius: 4px; border: 1px solid #475569;">Ctrl + P</kbd> &rarr; select <em>Save as PDF</em> to export your 8-slide pitch deck!
+  </div>
+  <button onclick="window.print()" style="background: #2563EB; color: white; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 700; cursor: pointer;">Export PDF</button>
+</div>
+
+<!-- SLIDE 1 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>ENTERPRISE SALES & PROFITABILITY INTELLIGENCE</h2>
+      <p>Executive Performance & Margin Recovery Strategy</p>
+    </div>
+    <div class="slide-num">SLIDE 01 / 08</div>
+  </div>
+  <div class="slide-body" style="justify-content: center; text-align: center;">
+    <div style="max-width: 720px; margin: 0 auto;">
+      <span class="badge blue" style="font-size: 13px; padding: 6px 14px; margin-bottom: 20px;">CASE STUDY & BUSINESS BRIEF</span>
+      <h1 style="font-size: 34px; font-weight: 800; line-height: 1.2; margin-bottom: 18px;">
+        Uncovering $285,000 in Profit Leakage Across 25,000 Multi-Region Transactions
+      </h1>
+      <p style="font-size: 16px; color: var(--text-gray); line-height: 1.6; margin-bottom: 30px;">
+        Transitioning global retail operations from 48-hour static spreadsheet delays to an automated Power BI Star Schema intelligence system.
+      </p>
+      <div class="grid-3" style="margin-top: 10px;">
+        <div class="card kpi-card">
+          <div class="kpi-val">$4.21M</div>
+          <div class="kpi-label">Gross Revenue Modeled</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-val green">25,000+</div>
+          <div class="kpi-label">Transactions Analyzed</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-val amber">6 Global</div>
+          <div class="kpi-label">Sales Territories</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>Lead Analyst: Sourojit Kar</span>
+    <span>Stack: Power BI | DAX | Star Schema | PostgreSQL</span>
+  </div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>THE BUSINESS CRISIS & BLIND SPOTS</h2>
+      <p>The Challenge of Growth Without Realized Profit</p>
+    </div>
+    <div class="slide-num">SLIDE 02 / 08</div>
+  </div>
+  <div class="slide-body">
+    <div class="grid-2">
+      <div class="card" style="border-left: 4px solid var(--accent-crimson);">
+        <span class="badge red">THE CORE PROBLEM</span>
+        <h3 style="font-size: 18px; margin-bottom: 12px; color: #F87171;">The Top-Line Illusion</h3>
+        <p style="font-size: 14px; color: #CBD5E1; line-height: 1.6;">
+          While top-line gross sales expanded by <strong>+14% YoY</strong>, operating profit margins remained unexpectedly flat at 21.4%. Leadership lacked dimensional visibility into which SKUs and territories were actively diluting cash flow.
+        </p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--accent-amber);">
+        <span class="badge red">OPERATIONAL BOTTLENECKS</span>
+        <ul class="clean-list">
+          <li><strong>48-Hour Reporting Latency:</strong> Finance spent 2 days every week manually cleaning disparate CSV spreadsheets.</li>
+          <li><strong>Discretionary Discounting:</strong> Regional teams applied promotional discounts up to 20% to chase volume quotas.</li>
+          <li><strong>The Aggregate Trap:</strong> Blended reporting masked unprofitable territories behind high-performing markets.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>Business Risk: High volume subsidizing negative-margin order fulfillment</span>
+    <span>Objective: Implement real-time automated KPI audit</span>
+  </div>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>ENTERPRISE DATA ARCHITECTURE</h2>
+      <p>Star Schema Modeling & Automated ETL Pipeline</p>
+    </div>
+    <div class="slide-num">SLIDE 03 / 08</div>
+  </div>
+  <div class="slide-body">
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--accent-blue);">Relational Star Schema Model</h3>
+        <ul class="clean-list">
+          <li><strong>Fact_Sales (25k rows):</strong> Primary transaction records tracking gross sales, net revenue, unit costs, and profit.</li>
+          <li><strong>Dim_Date (1,096 days):</strong> Time dimension supporting fiscal quarters, months, and sequential sorting.</li>
+          <li><strong>Dim_Product (11 SKUs):</strong> Standard costs, target margins, and category hierarchies.</li>
+          <li><strong>Dim_Customer (500 entities):</strong> Segmented into Consumer, Corporate, and Small Business tiers.</li>
+          <li><strong>Dim_Region (6 territories):</strong> Direct mapping of regional managers and geographic boundaries.</li>
+        </ul>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; justify-content: center; text-align: center;">
+        <span class="badge green" style="align-self: center;">PERFORMANCE OPTIMIZATION</span>
+        <h4 style="font-size: 20px; font-weight: 700; margin: 10px 0;">Strict 1-to-Many Single Direction</h4>
+        <p style="font-size: 13px; color: var(--text-gray); line-height: 1.5; margin-bottom: 15px;">
+          Eliminated many-to-many ambiguity and bi-directional cross-filtering, ensuring lightning-fast in-memory DAX rendering.
+        </p>
+        <div style="background: #0F172A; padding: 12px; border-radius: 6px; border: 1px solid var(--card-border); font-family: monospace; font-size: 12px; color: #38BDF8;">
+          Dim_Date [1] &rarr; [*] Fact_Sales [OrderDateKey]<br/>
+          Dim_Product [1] &rarr; [*] Fact_Sales [ProductKey]<br/>
+          Dim_Region [1] &rarr; [*] Fact_Sales [RegionKey]
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>Architecture: VertiPaq Columnar Storage</span>
+    <span>Governance: Zero manual M-code dependencies</span>
+  </div>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>MACRO PERFORMANCE TRAJECTORY</h2>
+      <p>DAX Time-Intelligence & Revenue Velocity</p>
+    </div>
+    <div class="slide-num">SLIDE 04 / 08</div>
+  </div>
+  <div class="slide-body">
+    <div class="grid-4" style="margin-bottom: 20px;">
+      <div class="card kpi-card">
+        <div class="kpi-val">$4,210,000</div>
+        <div class="kpi-label">Gross Net Sales</div>
+      </div>
+      <div class="card kpi-card">
+        <div class="kpi-val green">$1,024,500</div>
+        <div class="kpi-label">Realized Profit</div>
+      </div>
+      <div class="card kpi-card">
+        <div class="kpi-val amber">24.3%</div>
+        <div class="kpi-label">Blended Margin</div>
+      </div>
+      <div class="card kpi-card">
+        <div class="kpi-val">$168.40</div>
+        <div class="kpi-label">Average Order Value</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="font-size: 16px; margin-bottom: 8px; color: var(--accent-blue);">Executive Time-Intelligence Insights:</h3>
+      <ul class="clean-list">
+        <li><strong>Seasonal Q4 Surge:</strong> November & December generated 28.5% of total annual revenue driven by holiday consumer tech demand.</li>
+        <li><strong>Q2 Mid-Year Dip:</strong> European regional revenues contracted by 8.4% due to off-peak replenishment and inventory staging bottlenecks.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>Formulas: CALCULATE, SAMEPERIODLASTYEAR, TOTALYTD</span>
+    <span>Status: Automated Daily Velocity Tracking</span>
+  </div>
+</div>
+
+<!-- SLIDE 5 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>THE DISCOVERY: THE MARGIN LEAKAGE TRAP</h2>
+      <p>Quadrant Analysis: Margin % vs. Sales Volume</p>
+    </div>
+    <div class="slide-num">SLIDE 05 / 08</div>
+  </div>
+  <div class="slide-body">
+    <div class="grid-2">
+      <div class="card" style="border-top: 3px solid var(--accent-emerald);">
+        <span class="badge green">CASH COW (HIGH MARGIN / HIGH VOLUME)</span>
+        <h4 style="font-size: 16px; margin-bottom: 8px;">Technology & Displays</h4>
+        <ul class="clean-list">
+          <li><strong>27" Smart Displays & Audio Gear:</strong> Maintained an exceptional <strong>33.3% net profit margin</strong>.</li>
+          <li>Low discount elasticity; buyers prioritize performance over promotional coupons.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top: 3px solid var(--accent-crimson);">
+        <span class="badge red">PROFIT BLEEDER (HIGH VOLUME / ERODED MARGIN)</span>
+        <h4 style="font-size: 16px; margin-bottom: 8px;">Consumer Peripherals & Accessories</h4>
+        <ul class="clean-list">
+          <li><strong>Thunderbolt Hubs & Charging Pads:</strong> Represented <strong>32% of total orders</strong>, but net margin collapsed to <strong>14.2%</strong>.</li>
+          <li>Uncapped 15%–20% promotional discounts completely eroded operational margins.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>Quantified Impact: $115,000 lost annually to subsidizing non-essential discounts</span>
+    <span>Visual: Margin Scatter Matrix</span>
+  </div>
+</div>
+
+<!-- SLIDE 6 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>GEOSPATIAL & CUSTOMER SEGMENTATION</h2>
+      <p>Territory Disparity & High-Yield Personas</p>
+    </div>
+    <div class="slide-num">SLIDE 06 / 08</div>
+  </div>
+  <div class="slide-body">
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--accent-blue);">Regional Territory Performance</h3>
+        <ul class="clean-list">
+          <li><strong>US-West & Central Europe:</strong> Powerhouse regions driving <strong>42.4% of total profit</strong> with consistent 26%+ margins.</li>
+          <li><strong>UK & Ireland:</strong> Experienced a <strong>4.1% margin drag</strong> attributed to elevated customs, transit freight, and regional price discounting.</li>
+          <li><strong>South Asia (India):</strong> Fastest-growing territory (+24% YoY volume) with rapid corporate B2B expansion.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--accent-blue);">Customer Tier Economics</h3>
+        <ul class="clean-list">
+          <li><strong>Corporate B2B (30% of accounts):</strong> Highest ticket size ($340 AOV) and lowest discount sensitivity. Primary profit stabilizer.</li>
+          <li><strong>Small Business (15%):</strong> High loyalty, consistent quarterly replenishment cadences.</li>
+          <li><strong>Direct Consumers (55%):</strong> High volume, but accounted for 78% of all discounted transactions.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>Geospatial Coverage: 6 Major Operational Territories</span>
+    <span>Key Metric: B2B accounts yield 2.1x higher lifetime profitability</span>
+  </div>
+</div>
+
+<!-- SLIDE 7 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>STRATEGIC ROADMAP & FINANCIAL ROI</h2>
+      <p>Three Actionable Interventions to Recapture $285k</p>
+    </div>
+    <div class="slide-num">SLIDE 07 / 08</div>
+  </div>
+  <div class="slide-body">
+    <div class="grid-3">
+      <div class="card" style="border-top: 3px solid var(--accent-blue);">
+        <h4 style="font-size: 15px; margin-bottom: 8px;">1. Discount Capping Policy</h4>
+        <p style="font-size: 13px; color: #CBD5E1; line-height: 1.5; margin-bottom: 12px;">
+          Enforce automated 5% ceiling on peripheral SKUs. Prohibit discretionary bundling without VP approval.
+        </p>
+        <div style="font-size: 18px; font-weight: 800; color: var(--accent-emerald);">+$115,000</div>
+        <div style="font-size: 11px; color: var(--text-gray);">Annualized Margin Recapture</div>
+      </div>
+      <div class="card" style="border-top: 3px solid var(--accent-emerald);">
+        <h4 style="font-size: 15px; margin-bottom: 8px;">2. Warehouse Reallocation</h4>
+        <p style="font-size: 13px; color: #CBD5E1; line-height: 1.5; margin-bottom: 12px;">
+          Shift 20% of stagnant European inventory buffers to US-West to meet unfulfilled high-margin display demand.
+        </p>
+        <div style="font-size: 18px; font-weight: 800; color: var(--accent-emerald);">+$170,000</div>
+        <div style="font-size: 11px; color: var(--text-gray);">Incremental High-Margin Revenue</div>
+      </div>
+      <div class="card" style="border-top: 3px solid var(--accent-amber);">
+        <h4 style="font-size: 15px; margin-bottom: 8px;">3. Automated Governance</h4>
+        <p style="font-size: 13px; color: #CBD5E1; line-height: 1.5; margin-bottom: 12px;">
+          Configure dynamic Power BI alerts triggering immediate email notifications when territory margins drop under 20%.
+        </p>
+        <div style="font-size: 18px; font-weight: 800; color: var(--accent-blue);">100% Zero Delay</div>
+        <div style="font-size: 11px; color: var(--text-gray);">Real-Time Executive Oversight</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>Total Bottom-Line Impact: +$285,000 in bottom-line recovery</span>
+    <span>Payback Period: Immediate upon policy execution</span>
+  </div>
+</div>
+
+<!-- SLIDE 8 -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-title-wrap">
+      <h2>REPRODUCIBILITY & ANALYST CREDENTIALS</h2>
+      <p>Open Source Code, Data Models & Architecture</p>
+    </div>
+    <div class="slide-num">SLIDE 08 / 08</div>
+  </div>
+  <div class="slide-body" style="text-align: center; justify-content: center;">
+    <div style="max-width: 650px; margin: 0 auto;">
+      <h3 style="font-size: 22px; font-weight: 800; margin-bottom: 10px;">The Entire System is 100% Reproducible</h3>
+      <p style="font-size: 14px; color: var(--text-gray); line-height: 1.6; margin-bottom: 25px;">
+        All underlying datasets, DAX libraries, automated theme files, and Power BI models are publicly hosted and version-controlled.
+      </p>
+      <div class="card" style="text-align: left; background: #0B132B; margin-bottom: 25px;">
+        <div style="font-size: 13px; color: #94A3B8; margin-bottom: 6px;">📂 GitHub Repository URL:</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #38BDF8;">
+          https://github.com/Jeet908/automated-powerbi-sales-intelligence
+        </div>
+      </div>
+      <div style="font-size: 15px; color: #E2E8F0;">
+        <strong>Sourojit Kar</strong> | Aspiring Data Analyst & Business Intelligence Specialist<br/>
+        <span style="color: var(--text-gray); font-size: 13px;">Kolkata, India &middot; Open to 100% Remote Opportunities</span><br/>
+        <span style="color: var(--accent-blue); font-size: 13px;">karsouro@gmail.com &middot; linkedin.com/in/sourojitkar</span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>Portfolio Hub: github.com/Jeet908</span>
+    <span>Status: Available for Remote Hiring</span>
+  </div>
+</div>
+
+</body>
+</html>

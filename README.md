@@ -3,16 +3,22 @@
 [![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-yellow?logo=powerbi)](https://powerbi.microsoft.com/)
 [![DAX](https://img.shields.io/badge/DAX-Time%20Intelligence-blue)](#)
 [![Star Schema](https://img.shields.io/badge/Data%20Modeling-Star%20Schema-green)](#)
+[![Executive Pitch Deck](https://img.shields.io/badge/Executive%20Pitch%20Deck-8%20Slides-orange?logo=google-slides)](presentation/Executive_Pitch_Deck.md)
 
-An automated Power BI system for tracking sales, revenue, profit margins, and year-over-year performance across 25,000+ multi-regional retail transactions, reducing reliance on manual spreadsheet reporting.
+An enterprise-scale Power BI business intelligence system modeling 25,000+ multi-regional retail transactions to monitor net revenue, profit margins, and Year-over-Year (YoY) velocity without manual reporting overhead.
 
 ---
 
-## 📌 Executive Summary
-Traditional corporate retail reporting relies on static spreadsheets and manual refreshes that fail to reveal margin leakage. This automated system delivers:
-- **Star Schema Architecture:** Seamlessly connects 1 Fact table with 4 Dimension tables (Date, Product, Customer, Region).
-- **Time Intelligence DAX Engine:** Calculates real-time YoY, YTD, MTD, and margin dynamics across variable fiscal periods.
-- **Automated Theming & Governance:** Standardized container styling, responsive visual hierarchy, and dynamic status badges.
+## 🎯 Executive Case Study & Pitch Deck
+
+> 💡 **Review the Full Business Case & Strategy:**
+> - 📄 **[Read the 8-Slide Executive Pitch Deck (Markdown)](presentation/Executive_Pitch_Deck.md)**
+> - 🖨️ **[Printable Corporate Pitch Deck (HTML / PDF)](presentation/Executive_Pitch_Deck.html)** *(Open in Chrome/Edge &rarr; Print to PDF)*
+
+### The Business Discovery in 60 Seconds:
+- **The Challenge:** While top-line gross sales expanded by **+14% YoY**, operating margins stagnated at 21.4% due to a 48-hour manual reporting lag and discretionary promotional discounting.
+- **The Solution:** Engineered an automated Power BI Star Schema connecting 25k transactions across 6 global territories with 10+ time-intelligence DAX measures.
+- **The Impact:** Isolated a **6.8% margin leakage** in heavily discounted accessory lines and delivered 3 strategic recommendations projected to **recapture $285,000 in bottom-line profit**.
 
 ---
 
@@ -63,10 +69,7 @@ erDiagram
    git clone https://github.com/Jeet908/automated-powerbi-sales-intelligence.git
    ```
 2. Open `pbix/Enterprise_Sales_Intelligence.pbix` in **Power BI Desktop** (no Microsoft organizational login required).
-3. To regenerate synthetic data:
-   ```bash
-   python scripts/build_project.py
-   ```
+3. Review the presentation: Open `presentation/Executive_Pitch_Deck.html` in your browser.
 
 ---
 
